@@ -27,18 +27,32 @@
   padding: 0;
 }
 
-.container-menu {
-  max-width: 270px;
+.search__menu-container {
+  position: absolute;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   box-shadow: 5px 0 20px 15px rgba(0, 0, 0, 0.25);
+  width: 320px;
+  height: 100vh;
+}
+
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
 }
 
 .search__menu {
-  padding: 24px;
-  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .search__menu-nav {
-  margin-bottom: 16.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .search__menu-header {
@@ -71,8 +85,8 @@
 .search__menu-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin: 0;
+  gap: 24px;
+  margin: auto;
   padding: 0;
 }
 
@@ -100,6 +114,12 @@
   text-decoration: none;
 }
 
+.search__menu-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
 .search__menu-footer-button {
   display: flex;
   background-color: transparent;
@@ -110,13 +130,13 @@
   cursor: pointer;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin-top: auto;
 }
 
 .search__menu-footer-buttons {
   display: flex;
   gap: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .search__menu-footer-emeil {
@@ -133,9 +153,9 @@
 .search__menu-footer-phone {
   display: flex;
   font-family: "TTLakes";
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
-  font-size: 1rem;
+  letter-spacing: -0.6px;
   text-decoration: none;
   margin-bottom: 40px;
   color: #1b1c21;
@@ -164,9 +184,9 @@
   margin: 0;
 }
 
-.search__menu-footer-language-item:active {
+/* .search__menu-footer-language-item:active {
   font-weight: 500px;
-}
+} */
 
 button:hover {
   opacity: 0.5;
